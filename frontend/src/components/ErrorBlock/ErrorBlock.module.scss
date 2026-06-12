@@ -1,0 +1,50 @@
+
+.errorBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 48px 32px;
+  max-width: 500px;
+  width: 100%;
+  margin: 40px auto 0;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+
+  @media (max-width: 768px) {
+    padding: 32px 16px;
+    margin-top: 24px;
+  }
+}
+
+.errorText {
+  font-size: 16px;
+  color: #dc2626;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+
+
+.buttonRetry {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 24px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+}
+
+.buttonRetry {
+  color: #ffffff;
+  background-color: #dc2626;
+
+  &:hover {
+    background-color: #b91c1c;
+  }
+}

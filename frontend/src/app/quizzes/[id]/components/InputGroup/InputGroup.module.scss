@@ -1,0 +1,25 @@
+.inputGroup {
+  width: 100%;
+}
+
+.textInput {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 16px;
+  color: #1e293b;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  transition: border-color 0.2s, background-color 0.2s, box-shadow 0.2s;
+
+  &:focus {
+    background-color: #ffffff;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+  }
+
+  @media (max-width: 768px) {
+    padding: 10px 14px;
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,33 @@
+.questionBlock {
+  border: 1px solid #e2e8f0;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+
+  @media (max-width: 768px) {
+    padding: 16px;
+    gap: 12px;
+  }
+}
+
+.questionTitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1e293b;
+  line-height: 26px;
+  padding: 0;
+  margin: 0 0 16px 0;
+
+  span {
+    color: #2563eb;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}

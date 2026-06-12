@@ -1,0 +1,123 @@
+.item {
+  position: relative;
+  display: flex;
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease, opacity 0.2s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    border-color: #2563eb;
+    box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.1);
+  }
+
+  @media (max-width: 768px) {
+    &:hover {
+      transform: none;
+    }
+  }
+}
+
+.itemDeleting {
+  opacity: 0.6;
+  border-color: #fca5a5;
+  box-shadow: none;
+  transform: none;
+}
+
+.buttonDelete {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 10;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #dc2626;
+  background-color: #fef2f2;
+  border-radius: 6px;
+  transition: background-color 0.2s, color 0.2s;
+
+  &:hover:not(:disabled) {
+    background-color: #dc2626;
+    color: #ffffff;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+
+  @media (max-width: 768px) {
+    top: 12px;
+    right: 12px;
+    padding: 6px 10px;
+  }
+}
+
+.buttonDeletingText {
+  color: #991b1b;
+  background-color: #fee2e2;
+}
+
+.cardLink {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  padding: 24px;
+  text-decoration: none;
+  border-radius: 12px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 12px;
+    z-index: 1;
+  }
+
+  @media (max-width: 768px) {
+    padding: 20px;
+    padding-top: 48px;
+  }
+}
+
+.disabledLink {
+  pointer-events: none;
+  
+  &::after {
+    display: none !important;
+  }
+}
+
+.cardTitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 12px;
+  line-height: 28px;
+  padding-right: 85px;
+
+  @media (max-width: 768px) {
+    font-size: 18px;
+    margin-bottom: 8px;
+    line-height: 24px;
+    padding-right: 0;
+  }
+}
+
+.cardInfo {
+  font-size: 14px;
+  color: #64748b;
+  margin-top: auto;
+
+  span {
+    font-weight: 600;
+    color: #2563eb;
+  }
+}

@@ -1,0 +1,51 @@
+.page {
+  max-width: 680px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 16px;
+
+  @media (max-width: 1024px) {
+    padding: 32px 16px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 24px 12px;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.centerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0;
+}
+
+
+.readOnly {
+  pointer-events: none;
+
+  .optionLabel {
+    cursor: default;
+    background-color: #f8fafc;
+    
+    &:hover {
+      background-color: #f8fafc;
+      border-color: #e2e8f0;
+    }
+  }
+
+  .textInput {
+    background-color: #f1f5f9;
+    color: #94a3b8;
+    
+    &::placeholder {
+      color: #94a3b8;
+    }
+  }
+}

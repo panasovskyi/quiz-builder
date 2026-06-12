@@ -1,0 +1,21 @@
+.booleanPreview {
+  background-color: #f8fafc;
+  border: 1px dashed #cbd5e1;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  color: #64748b;
+  font-size: 14px;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.booleanOption {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  padding: 6px 20px;
+  border-radius: 6px;
+  font-weight: 500;
+  color: #475569;
+}
